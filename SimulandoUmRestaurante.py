@@ -1,5 +1,4 @@
-# Simule um restaurante apresentando um menu com opções de comidas variadas usando condições(use repetições while se necessário)
-# O programa está em fase de testes para melhoramentos futuros, agradecemos a compreensão
+# Simule um restaurante apresentando um menú com opções de comidas variadas usando condições(use repetições while se necessário)
 
 print('=' * 37)
 print('\033[1;7;40mBem vindo ao restaurante Boi na Brasa\033[m')
@@ -14,20 +13,24 @@ print('''\033[1m[1]Peixe frito
 
 opcao = int(input('\033[1;4;33mDigite sua opção: \033[m'))
 
-if opcao == 1:
-    print('\033[1;40mBoa pedida! O peixe frito é um delicioso prato.\033[m')
-if opcao == 2:
-    print('\033[1;40mUma costelinha deliciosa de porco saindo da brasa.\033[m')
-if opcao == 3:
-    print('\033[1;40mBife grelhado: uma das nossas especialidades da casa.\033[m')
-if opcao == 4:
-    print('\033[1;40mAqui fazemos hambúrgueres com fritas melhores que os do Burger King, confia!\033[m')
-if opcao == 5:
-    print('\033[1;40mMelhores panquecas do mundo, ainda por cima recheadas com linguiça, duvido você encontrar melhores.\033[m')
 while opcao != 1 and opcao != 2 and opcao != 3 and opcao != 4 and opcao != 5:
     opcao = int(input('\033[1;31mOpção inválida, tente novamente: \033[m'))
 
+    if opcao == 1:
+        print('\033[1;40mBoa pedida! O peixe frito é um delicioso prato.\033[m')
+    if opcao == 2:
+        print('\033[1;40mUma costelinha deliciosa de porco saindo da brasa.\033[m')
+    if opcao == 3:
+        print('\033[1;40mBife grelhado: uma das nossas especialidades da casa.\033[m')
+    if opcao == 4:
+        print('\033[1;40mAqui fazemos hambúrgueres com fritas melhores que os do Burger King, confia!\033[m')
+    if opcao == 5:
+        print('\033[1;40mMelhores panquecas do mundo, ainda por cima recheadas com linguiça, duvido você encontrar melhores.\033[m')
+
 x = str(input('\033[1;4;35mDeseja uma bebida como acompanhante?[S/N]: \033[m')).upper().strip()
+while x != 'S' and x != 'N':
+    x = str(input('\033[1;4;35mDeseja uma bebida como acompanhante?[S/N]: \033[m')).upper().strip()
+
 if x == 'S':
     print('''\033[1m[1]Suco de laranja
 [2]Suco de limão
@@ -36,6 +39,8 @@ if x == 'S':
 [5]Achocolatado\033[m''')
 
     opcao2 = int(input('\033[1;4;36mDigite sua opção: \033[m'))
+    while opcao2 != 1 and opcao2 != 2 and opcao2 != 3 and opcao2 != 4 and opcao2 != 5:
+        opcao2 = int(input('\033[1;4;36mDigite sua opção: \033[m'))
     if opcao2 == 1:
         print('\033[1;40mQue maravilha, traremos o mais rápido possível!\033[m')
     if opcao2 == 2:
@@ -48,6 +53,9 @@ if x == 'S':
         print('\033[1;40mA nossa caneca de acholatado promete ser uma beleza.\033[m')
 
 y = str(input('\033[1;4;32mDeseja uma deliciosa sobremesa? [S/N]: \033[m')).upper().strip()
+while y != 'S' and y != 'N':
+    y = str(input('\033[1;4;32mDeseja uma deliciosa sobremesa? [S/N]: \033[m')).upper().strip()
+
 if y == 'S':
     print('''\033[1m[1]Pudim de leite
 [2]Açaí natural
@@ -56,6 +64,9 @@ if y == 'S':
 [5]Goiabada''')
 
     opcao3 = int(input('\033[1;4;35mDigite sua opção: \033[m'))
+    while opcao3 != 1 and opcao3 != 2 and opcao3 != 3 and opcao3 != 4 and opcao3 != 5:
+        opcao3 = int(input('\033[1;4;35mDigite sua opção: \033[m'))
+
     if opcao3 == 1:
         print('\033[1;40mAs vezes, tudo que precisamos é de um pudim gigante gelado.\033[m')
     if opcao3 == 2:
