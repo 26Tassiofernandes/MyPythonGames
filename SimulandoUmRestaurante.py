@@ -1,4 +1,5 @@
 # Simule um restaurante apresentando um menú com opções de comidas variadas usando condições(use repetições while se necessário)
+# O programa está em fase de testes para melhoramentos futuros, agradecemos a compreensão
 
 print('=' * 37)
 print('\033[1;7;40mBem vindo ao restaurante Boi na Brasa\033[m')
