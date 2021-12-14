@@ -1,3 +1,6 @@
+# Vamos jogar um pedra, papel ou tesoura? Considere "kapakapakapa" no programa como uma risada para fins humorísticos...
+
+
 import random
 from time import sleep
 
