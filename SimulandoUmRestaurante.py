@@ -16,16 +16,16 @@ opcao = int(input('\033[1;4;33mDigite sua opção: \033[m'))
 while opcao != 1 and opcao != 2 and opcao != 3 and opcao != 4 and opcao != 5:
     opcao = int(input('\033[1;31mOpção inválida, tente novamente: \033[m'))
 
-    if opcao == 1:
-        print('\033[1;40mBoa pedida! O peixe frito é um delicioso prato.\033[m')
-    if opcao == 2:
-        print('\033[1;40mUma costelinha deliciosa de porco saindo da brasa.\033[m')
-    if opcao == 3:
-        print('\033[1;40mBife grelhado: uma das nossas especialidades da casa.\033[m')
-    if opcao == 4:
-        print('\033[1;40mAqui fazemos hambúrgueres com fritas melhores que os do Burger King, confia!\033[m')
-    if opcao == 5:
-        print('\033[1;40mMelhores panquecas do mundo, ainda por cima recheadas com linguiça, duvido você encontrar melhores.\033[m')
+if opcao == 1:
+    print('\033[1;40mBoa pedida! O peixe frito é um delicioso prato.\033[m')
+if opcao == 2:
+    print('\033[1;40mUma costelinha deliciosa de porco saindo da brasa.\033[m')
+if opcao == 3:
+    print('\033[1;40mBife grelhado: uma das nossas especialidades da casa.\033[m')
+if opcao == 4:
+    print('\033[1;40mAqui fazemos hambúrgueres com fritas melhores que os do Burger King, confia!\033[m')
+if opcao == 5:
+    print('\033[1;40mMelhores panquecas do mundo, ainda por cima recheadas com linguiça, duvido você encontrar melhores.\033[m')
 
 x = str(input('\033[1;4;35mDeseja uma bebida como acompanhante?[S/N]: \033[m')).upper().strip()
 while x != 'S' and x != 'N':
