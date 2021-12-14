@@ -1,5 +1,6 @@
 # Nesse programa simulamos um restaurante contendo comidas variadas, desde pratos principais até sobremesas. Bom apetite!
 
+
 print('=' * 37)
 print('\033[1;7;40mBem vindo ao restaurante Boi na Brasa\033[m')
 print('\033[1;7;40mFaça seu pedido abaixo\033[m')
