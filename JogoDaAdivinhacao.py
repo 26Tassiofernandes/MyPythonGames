@@ -2,25 +2,37 @@ from time import sleep
 import random
 from pygame import mixer
 
-tent = 7
+# Número máximo de tentativas por jogada
+tent = 7 
 
-'''letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'R', 'S',
-          'T', 'U', 'V', 'W', 'X', 'Y', 'Z']'''
 
+# Lista de esportes escolhidos
 sports = ['ATLETISMO', 'BASQUETE', 'BOXE', 'CANOAGEM', 'CICLISMO', 'ESGRIMA', 'FUTEBOL', 'GINASTICA', 'GOLFE',
           'HANDEBOL', 'JUDO', 'NATAÇAO', 'REMO', 'SKATE', 'SURFE', 'TAEKWONDO', 'TENISDEMESA', 'VOLEI']
+
+# Sorteio de um esporte aleatório da lista
 sort_sports = random.choice(sports)
 
+# Lista de planetas escolhidos
 planets = ['MERCURIO', 'VENUS', 'TERRA', 'MARTE', 'JUPITER', 'SATURNO', 'URANO', 'NETUNO']
+
+# Sorteio de um planeta aleatório da lista
 sort_planets = random.choice(planets)
 
+# Lista de cores escolhidas
 cores = ['AZUL', 'VERMELHO', 'ROSA', 'AMARELO', 'PRETO', 'VERDE', 'CINZA', 'MARROM', 'ROXO', 'LARANJA', 'VIOLETA',
          'BRANCO']
+
+# Sorteio de uma cor aleatória da lista
 sort_cores = random.choice(cores)
 
+
+# Lista de super heróis escolhidos
 heroes = ['CAPITAOAMERICA', 'MULHERMARAVILHA', 'HOMEMARANHA', 'HOMEMDEFERRO', 'HULK', 'BATMAN',
           'SUPERMAN', 'LANTERNAVERDE', 'DEADPOOL', 'SHAZAN', 'AQUAMAN', 'THOR', 'VIUVANEGRA', 'WOLVERINE',
           'GAVIAOARQUEIRO', 'FLASH', 'PANTERANEGRA', 'SUPERGIRL']
+
+# Sorteio de um héroi aleatório da lista
 sort_heroes = random.choice(heroes)
 
 print('=-' * 15)
@@ -63,7 +75,7 @@ if start == 'START':
         while esporte != sort_sports:
             esporte = str(input('\033[1;4;31mResposta incorreta. Tente novamente: \033[m')).upper().strip()
             tent = tent - 1
-            #print(f'\033[1;4mVocê tem {tent} tentativas\033[m')
+            
             if tent == 0:
                 print('\033[1;31mGame Over!\033[m')
                 print(f'\033[1;32mA resposta correta era \033[1;4;35m{sort_sports}!\033[m')
