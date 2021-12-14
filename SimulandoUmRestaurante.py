@@ -1,4 +1,4 @@
-# Simule um restaurante apresentando um menu com opções de comidas variadas usando condições(use repetições while se necessário)
+# Nesse programa simulamos um restaurante contendo comidas variadas, desde pratos principais até sobremesas. Bom apetite!
 
 print('=' * 37)
 print('\033[1;7;40mBem vindo ao restaurante Boi na Brasa\033[m')
@@ -38,19 +38,19 @@ if x == 'S':
 [4]Refrigerante em lata
 [5]Achocolatado\033[m''')
 
+opcao2 = int(input('\033[1;4;36mDigite sua opção: \033[m'))
+while opcao2 != 1 and opcao2 != 2 and opcao2 != 3 and opcao2 != 4 and opcao2 != 5:
     opcao2 = int(input('\033[1;4;36mDigite sua opção: \033[m'))
-    while opcao2 != 1 and opcao2 != 2 and opcao2 != 3 and opcao2 != 4 and opcao2 != 5:
-        opcao2 = int(input('\033[1;4;36mDigite sua opção: \033[m'))
-    if opcao2 == 1:
-        print('\033[1;40mQue maravilha, traremos o mais rápido possível!\033[m')
-    if opcao2 == 2:
-        print('\033[1;40mSaindo um suco de limão para refrescar sua mente.\033[m')
-    if opcao2 == 3:
-        print('\033[1;40mSucos de uva geralmente são bem generosos, por aqui não é diferente.\033[m')
-    if opcao2 == 4:
-        print('\033[1;40mUma latinha gelada pra já.\033[m')
-    if opcao2 == 5:
-        print('\033[1;40mA nossa caneca de acholatado promete ser uma beleza.\033[m')
+if opcao2 == 1:
+    print('\033[1;40mQue maravilha, traremos o mais rápido possível!\033[m')
+if opcao2 == 2:
+    print('\033[1;40mSaindo um suco de limão para refrescar sua mente.\033[m')
+if opcao2 == 3:
+    print('\033[1;40mSucos de uva geralmente são bem generosos, por aqui não é diferente.\033[m')
+if opcao2 == 4:
+    print('\033[1;40mUma latinha gelada pra já.\033[m')
+if opcao2 == 5:
+    print('\033[1;40mA nossa caneca de acholatado promete ser uma beleza.\033[m')
 
 y = str(input('\033[1;4;32mDeseja uma deliciosa sobremesa? [S/N]: \033[m')).upper().strip()
 while y != 'S' and y != 'N':
